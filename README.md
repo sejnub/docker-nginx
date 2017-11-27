@@ -1,1 +1,1 @@
-# docker-nginx-cgi
+# docker-nginx

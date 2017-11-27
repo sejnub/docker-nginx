@@ -14,7 +14,7 @@ docker build -t sejnub/nginx .
 # Run
 
 ````
-docker rm -f nginx; docker run --net host -it --env-file /usr/local/etc/sejnub-credentials.env --name dash sejnub/amazon-dash-sniff /bin/bash
+docker rm -f nginx; docker run --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx
 ````
 
 

@@ -18,7 +18,7 @@ docker build -t sejnub/nginx .
 docker rm -f nginx; docker run -d -p 80:80 -p 443:443 --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx
 ````
 
-## xxxxx
+## Start interactively
 ````
 docker rm -f nginx; docker run -it -p 80:80 -p 443:443 --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx bash
 ````

@@ -13,9 +13,17 @@ docker build -t sejnub/nginx .
 
 # Run
 
+## Just to see if it starts
 ````
-docker rm -f nginx; docker run --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx
+docker rm -f nginx; docker run -d -p 80:80 -p 443:443 --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx
 ````
+
+## xxxxx
+````
+docker rm -f nginx; docker run -d -p 80:80 -p 443:443 --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx
+````
+
+
 
 
 eof

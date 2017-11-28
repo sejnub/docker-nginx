@@ -20,6 +20,11 @@ docker rm -f nginx; docker run -d -p 80:80 -p 443:443 --env-file /usr/local/etc/
 
 ## xxxxx
 ````
+docker rm -f nginx; docker run -it -p 80:80 -p 443:443 --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx bash
+````
+
+## xxxxx
+````
 docker rm -f nginx; docker run -d -p 80:80 -p 443:443 --env-file /usr/local/etc/sejnub-credentials.env --name nginx sejnub/nginx
 ````
 

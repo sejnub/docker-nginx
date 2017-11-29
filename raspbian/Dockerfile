@@ -1,12 +1,16 @@
 FROM tobi312/rpi-nginx
 
 
+
 # For unifi-tools/add-dns
 
 RUN apt-get update               && \
     apt-get install -yqq jq      && \
     apt-get install -yqq sshpass
+
+RUN git clone https://github.com/sejnub/unifi-tools.git && \
+    mkdir /usr/share/add-dns
+    cp -r unifi-tools/add-dns /usr/share
     
     
-    
-CMD ["nginx", "-g", "daemon off;"]
+# CMD ["nginx", "-g", "daemon off;"]

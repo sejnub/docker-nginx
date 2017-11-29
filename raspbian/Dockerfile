@@ -22,7 +22,4 @@ RUN cd /usr/share/add-dns                   && \
 
 # cd /usr/share/add-dns; ./add-dns.sh
 
-
-eof
-
 # CMD ["nginx", "-g", "daemon off;"]

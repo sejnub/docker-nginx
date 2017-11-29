@@ -13,13 +13,8 @@ RUN git clone https://github.com/sejnub/unifi-tools.git && \
     mkdir /usr/share/add-dns                            && \
     cp -r unifi-tools/add-dns /usr/share                && \
     rm -rf unifi-tools    
+    . /usr/share/add-dns/init.sh                           
 
-RUN cd /usr/share/add-dns                   && \
-    . ./init.sh                             && \
-    set -a                                  && \
-    . /usr/local/etc/sejnub-credentials.env && \
-    set +a                
-
-# cd /usr/share/add-dns; ./add-dns.sh
+# ./add-dns.sh
 
 # CMD ["nginx", "-g", "daemon off;"]

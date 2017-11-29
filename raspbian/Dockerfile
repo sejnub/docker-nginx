@@ -6,6 +6,7 @@ FROM tobi312/rpi-nginx
 
 RUN apt-get update               && \
     apt-get install -yqq jq      && \
+    apt-get install -yqq git     && \
     apt-get install -yqq sshpass
 
 RUN git clone https://github.com/sejnub/unifi-tools.git && \

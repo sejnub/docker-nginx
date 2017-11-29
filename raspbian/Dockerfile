@@ -9,7 +9,7 @@ RUN apt-get update               && \
     apt-get install -yqq sshpass
 
 RUN git clone https://github.com/sejnub/unifi-tools.git && \
-    mkdir /usr/share/add-dns
+    mkdir /usr/share/add-dns                            && \
     cp -r unifi-tools/add-dns /usr/share
     
     

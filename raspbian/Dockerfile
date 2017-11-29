@@ -12,7 +12,9 @@ RUN apt-get update               && \
 RUN git clone https://github.com/sejnub/unifi-tools.git && \
     mkdir /usr/share/add-dns                            && \
     cp -r unifi-tools/add-dns /usr/share                && \
-    rm -rf unifi-tools                                 # && \    . /usr/share/add-dns/init.sh                           
+    rm -rf unifi-tools                                  && \    
+    cd /usr/share/add-dns                               && \
+    . ./init.sh                           
 
 # ./add-dns.sh
 

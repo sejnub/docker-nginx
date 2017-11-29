@@ -20,8 +20,7 @@ RUN cd /usr/share/add-dns                   && \
     . /usr/local/etc/sejnub-credentials.env && \
     set +a                
 
-RUN cd /usr/share/add-dns && \
-    ./add-dns.sh
+# cd /usr/share/add-dns; ./add-dns.sh
 
 
 eof

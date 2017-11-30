@@ -7,7 +7,7 @@ cd ~
 rm -rf docker-nginx
 git clone https://github.com/sejnub/docker-nginx.git
 cd ~/docker-nginx 
-docker build -f raspbian -t sejnub/nginx .
+docker build -f raspbian/Dockerfile -t sejnub/nginx .
 ````
 
 

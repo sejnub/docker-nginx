@@ -17,7 +17,7 @@ RUN git clone https://github.com/sejnub/unifi-tools.git && \
     cd /usr/share/add-dns                               && \
     . ./init.sh                           
 
-COPY ../var-www/html/* /var/www/html
+COPY ../var-www/html/*.html /var/www/html
 
 # cd /usr/share/add-dns; ./add-dns.sh
 
